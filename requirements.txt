@@ -1,0 +1,3 @@
+selenium-driverless
+discord.py
+python-dotenv
