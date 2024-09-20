@@ -1,13 +1,13 @@
 import discord
 from discord.ext import commands
-import asyncio
+import asyncio, os
 from selenium_driverless import webdriver
 from selenium_driverless.types.by import By
 from dotenv import load_dotenv
 
 load_dotenv()
-username = os.getenv("USERNAME")
-password = os.getenv("PASSWORD")
+user = str(os.getenv("USER")
+passd = str(os.getenv("PASS")
 token = os.getenv("TOKEN")
 
 def get_filtered_list(all_num, l2):
@@ -41,9 +41,9 @@ async def get_instagram_reel_views(reel_url):
         await asyncio.sleep(3)
         
         username = await driver.find_element(By.NAME, "username")
-        await username.send_keys(username)
+        await username.send_keys(user)
         password = await driver.find_element(By.NAME, "password")
-        await password.send_keys(password)
+        await password.send_keys(passd)
         xpath_query = f"//div[contains(text(), 'Log in')]"
         submit = await driver.find_element(By.XPATH, xpath_query)
         await submit.click()

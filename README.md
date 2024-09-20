@@ -37,8 +37,8 @@ pip install -r requirements.txt
 ### 3. Environment Variables
 Create a `.env` file in the root directory and add your Instagram credentials and Discord bot token:
 ```
-USERNAME=<your_instagram_username>
-PASSWORD=<your_instagram_password>
+USER=<your_instagram_username>
+PASS=<your_instagram_password>
 TOKEN=<your_discord_bot_token>
 ```
 
